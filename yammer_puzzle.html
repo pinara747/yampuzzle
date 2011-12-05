@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>Pinar's Tile Puzzle</title>
+<meta name = "viewport" content="width=800, user-scalable=0"/>
+
+<link rel="stylesheet" type="text/css" href="styles/yam_puzzle.css" title="default">
+<link rel="Shortcut Icon" href="images/yam.ico">
+</head>
+<body>
+
+<div align=center>  <center>
+ <h1>Tile Puzzle by Pinar Aybar</h1>
+ <div id="instructions">
+   <p align="center" style="margin-right:100px;">
+   Scramble. Solve. Enjoy. ^_^ </p>
+<br>
+    </div>
+   <form>
+   <input class="button" type="button"  value="Scramble Tiles"  onClick="scramble();">
+   <input class="button" type="button"  value="Reset"           onclick="resetme();">
+   <input class="button" type="button"  value="Solve By One" 	onclick="solve();">
+   <input class="button" type="button"  value="Solve All" 		onclick="solverplay();">
+   </form>
+
+<div class="box">
+
+<div id="AutoSolve" class="alert" align="center">
+<p>
+The program has solved the puzzle for you. <br>Try to solve it yourself. :) 
+</p>
+<form style="text-align:right;">
+   <input class="button6"  type="button" value="OK" style="width:75px;" onClick="document.getElementById('AutoSolve').style.display='none'">
+   </form>
+</div>
+
+<div id="Solve" class="alert" align="center">
+<p>
+Congratulations! You solved the puzzle all by yourself! ^_^
+</p>
+<form style="text-align:right;">
+   <input class="button6"  type="button" value="OK" style="width:75px;" onClick="document.getElementById('Solve').style.display='none'">
+   </form>
+</div>  
+
+</div>
+<script language="javascript" type="text/javascript" src="scripts/yam_puzzle.js"></script>
+<br>
+<em>Photo from Google Images</em>
+<br>
+</center>
+</div>
+
+</body>
+</html>
